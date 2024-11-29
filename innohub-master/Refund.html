@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refund & Cancellation</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">InnoHub</a>
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link" data-nav-link>Home</a></li>
+          <li><a href="service.html" class="navbar-link" data-nav-link>Services</a></li>
+          <li><a href="project.html" class="navbar-link" data-nav-link>Project</a></li>
+          <li><a href="About.html" class="navbar-link" data-nav-link>About Us</a></li>
+          <li><a href="contact.html" class="navbar-link" data-nav-link>Terms</a></li>
+          <li><a href="privacy.html" class="navbar-link" data-nav-link>Privacy</a></li>
+          <li><a href="Refund.html" class="navbar-link" data-nav-link>Refund & Cancellation</a></li>
+          <li><a href="contact .html" class="navbar-link" data-nav-link>Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="hero-background">
+          <img src="./assets/images/hero-banner.png" alt="hero banner" class="hero-image">
+        </div>
+        <div class="hero-content">
+          <h1 class="h1 hero-title">Refund & Cancellation</h1>
+        </div>
+      </section>
+      <style>
+        /* Hero Section Styling */
+        .hero {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 60vh;
+          overflow: hidden;
+        }
+
+        .hero-background {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0.4;
+        }
+
+        .hero-image {
+          max-width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+
+        .hero-content {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          z-index: 1;
+        }
+
+        .hero-title {
+          font-size: 7rem;
+          background: linear-gradient(
+            to right,
+            hsl(25, 100%, 50%),
+            hsl(341, 100%, 49%)
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+          0% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(-10px);
+          }
+
+          100% {
+            transform: translateY(0);
+          }
+        }
+      </style>
+
+      <div class="container">
+        <main class="content">
+          <h2>Refund Policy</h2>
+          <p>At [Your Company Name], we value our customers and want to ensure your satisfaction with our services. If you are not satisfied with your purchase, please review our refund policy below.</p>
+          
+          <h2>1. Eligibility for Refund</h2>
+          <p>To be eligible for a refund, you must request it within [X] days of your purchase. Refunds are only available for services that have not been rendered or if there was an error in the service provided.</p>
+          <p>If you have any issues with the service, please contact us within the designated period to request a refund. Refunds will be processed within [X] business days of approval.</p>
+
+          <h2>2. Non-Refundable Services</h2>
+          <p>The following services are non-refundable:</p>
+          <ul>
+            <li>Digital products (e.g., eBooks, online courses, software downloads)</li>
+            <li>Customized services that were started or completed</li>
+            <li>Services that are canceled after the provided completion date</li>
+          </ul>
+
+          <h2>3. Refund Process</h2>
+          <p>To initiate a refund request, please contact our customer support team at <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>. Provide your order number and the reason for the refund request. Our team will review your case and notify you of the outcome.</p>
+
+          <h2>4. Cancellation Policy</h2>
+          <p>If you wish to cancel a service, please notify us at least [X] days before the service start date. If cancellation is made within the required time frame, a full refund will be issued. Cancellations made after the service has begun may result in partial refunds or no refund, depending on the service terms.</p>
+
+          <h2>5. Changes to the Refund & Cancellation Policy</h2>
+          <p>We reserve the right to update or change our Refund & Cancellation Policy at any time. All changes will be posted on this page, and you will be notified of any major updates. Please review this policy regularly to stay informed about our refund and cancellation practices.</p>
+
+          <h2>6. Contact Us</h2>
+          <p>If you have any questions about our refund or cancellation policies, please reach out to us at <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>. We are here to assist you.</p>
+        </main>
+
+        
+      </div>
+    </article>
+  </main>
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+      </p>
+
+    </div>
+  </footer>
+</body>
+
+</html>
+
+<style>
+    /* Global Styles */
+
+
+
+
+
+
+
+/* Main Content Styles */
+.content {
+background-color: white;
+padding: 40px;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+font-size: 32px;
+color: #333;
+border-bottom: 2px solid #ff5e5e;
+padding-bottom: 10px;
+margin-bottom: 20px;
+}
+
+p {
+font-size: 18px;
+line-height: 1.6;
+color: #555;
+margin-bottom: 15px;
+}
+
+ul {
+list-style-type: disc;
+margin-left: 20px;
+}
+
+ul li {
+font-size: 18px;
+color: #555;
+margin-bottom: 10px;
+}
+
+a {
+color: #ff5e5e;
+text-decoration: none;
+}
+
+
+
+/* Footer Styles */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.container {
+padding: 10px;
+}
+
+.header h1 {
+font-size: 36px;
+}
+
+.content {
+padding: 20px;
+}
+
+h2 {
+font-size: 28px;
+}
+
+p, ul li {
+font-size: 16px;
+}
+}
+</style>

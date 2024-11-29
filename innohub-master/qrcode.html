@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1124810552544784'); // Replace with your Pixel ID
+    fbq('track', 'PageView');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Your QR Code</h1>
+  </header>
+
+  <main>
+    <div id="qr-code-container" style="text-align:center;">
+      <div id="qr-code"></div>
+      <p>Scan this QR code to complete your transaction.</p>
+    </div>
+  </main>
+
+  <script>
+    // Function to retrieve URL parameters
+    function getQueryParam(param) {
+      var urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Get name, course, and user type from URL parameters
+    var name = getQueryParam('name');
+    var course = getQueryParam('course');
+    var userType = getQueryParam('user');
+
+    // QR Code content (based on user)
+    var qrData;
+
+    if (userType === 'https://sk.flexifunnels.com/kids?utm_source=Facebook%20Instagram&utm_medium=ppc&utm_campaign=%7B%7Badset.name%7D%7D&utm_content=%7B%7Bcampaign.id%7D%7D&color%20=greeen&fbclid=fbclid') {
+      qrData = `QR for User 1: Course: ${course}, Name: ${name}`;
+    } else if (userType === '2') {
+      qrData = `QR for User 2: Course: ${course}, Name: ${name}`;
+    } else {
+      qrData = `QR for Default User: Course: ${course}, Name: ${name}`;
+    }
+
+    // Generate QR Code
+    var qrCode = new QRCode(document.getElementById('qr-code'), {
+      text: qrData,
+      width: 200,
+      height: 200
+    });
+  </script>
+</body>
+</html>

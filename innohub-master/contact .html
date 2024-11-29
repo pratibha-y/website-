@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact-us</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">InnoHub</a>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+
+         <li>
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="service.html" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="project.html" class="navbar-link" data-nav-link>Project</a>
+          </li>
+
+          <li>
+            <a href="About.html" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+            <li>
+            <a href="term.html" class="navbar-link" data-nav-link>Terms</a>
+          </li>
+          <li>
+            <a href="privacy.html" class="navbar-link" data-nav-link>Privacy</a>
+          </li>
+          <li>
+            <a href="Refund.html" class="navbar-link" data-nav-link>Refund & Cancellation</a>
+          </li>
+            <a href="contact .html" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+          <li>
+        </ul>
+      </nav>
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+     <!---<section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+           
+
+            <h1 class="h1 hero-title">Services</h1>
+
+            <p class="hero-text">
+             
+            </p>
+
+            
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="720" height="673" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+
+      </section>-->
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="hero-background">
+          <img src="./assets/images/hero-banner.png" alt="hero banner" class="hero-image">
+        </div>
+      
+        <div class="hero-content">
+          <h1 class="h1 hero-title">Contact Us</h1>
+        </div>
+      </section>
+      <style>
+        /* Hero Section Styling */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4; /* Transparency for the image */
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 7rem; /* Adjust as needed */
+  
+  background: linear-gradient(
+    to right, 
+    hsl(25, 100%, 50%),  /* Safety Orange */
+    hsl(341, 100%, 49%)  /* Red Crayola */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* Floating animation for the text */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+      </style>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <div class="contact-us">
+        <h2 class="contact-title">Contact Us</h2>
+        <p class="contact-description">Have questions or need help? Get in touch with us using the form below, or reach out via email or phone.</p>
+      
+        <div class="contact-content">
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <form action="" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+      
+          <!-- Contact Details -->
+          <div class="contact-details">
+            <h3>Our Office</h3>
+            <p><strong>Address:</strong> 123 Main Street, Cityville, Country</p>
+            <p><strong>Email:</strong> support@example.com</p>
+            
+            <p><strong>Hours:</strong> Mon - Fri: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      
+        
+      </div>
+      <style>
+        /* General Styling */
+.contact-us {
+  padding: 64px 5%;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.contact-title {
+  font-size: 48px;
+  color: #ff5e5e;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.contact-description {
+  font-size: 20px;
+  color: #777;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* Contact Content */
+.contact-content {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  max-width: 600px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: 18px;
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #ff5e5e;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form .submit-btn:hover {
+  background-color: #f53b57;
+}
+
+/* Contact Details */
+.contact-details {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contact-details h3 {
+  font-size: 24px;
+  color: #ff5e5e;
+  margin-bottom: 16px;
+}
+
+.contact-details p {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form, .contact-details {
+    max-width: 100%;
+  }
+}
+
+      </style>
+      
+      <!-- Services Section -->
+       
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" aria-label="back to top" data-back-top-btn class="back-top-btn">
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
